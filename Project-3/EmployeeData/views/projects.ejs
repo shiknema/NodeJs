@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h1>
+            <%= title %>
+        </h1>
+        <table border="1">
+            <tr>
+                <td>
+                    ID
+                </td>
+                <td>
+                    DESCRIPTION  
+                </td>
+            </tr>
+            
+            <% for(var i = 0; i< id.length && description.length; i++) { %>
+                
+                <tr>
+                    <td>
+                        <%= id[i] %>
+                    </td>
+                    <td>
+                        <%=  description[i] %>
+                    </td>
+                </tr>
+            <% } %>
+
+
+                
+                
+        </table>
+    </body>
+</html>
