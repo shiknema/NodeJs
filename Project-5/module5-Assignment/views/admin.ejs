@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include partials/head %>     
+    </head>
+    <body>
+        <% include partials/menu %>
+        <div class="container">
+            <h2>Add order</h2>
+            <form id="addOrderForm" action="/addData" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address </label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemSize">Items List</label>
+                    <select class="form-control" id="itemSize" name="itemSize">
+                        <option value="Small">Laptops</option>
+                        <option value="Medium">Printers</option>
+                        <option value="Large">Mobiles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="itemQty">Item Quantity:</label>
+                    <select class="form-control" id="itemQty" name="itemQty">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>                
+                <button type="submit" id="addOrder" class="btn btn-primary" role="button">Add</button>
+                <a href="/" class="btn btn-success" role="button">Cancel</a>
+                <button type="reset" class="btn btn-warning" role="button" value="Reset">Reset</button>
+            </form>
+        </div>
+        <br>
+        <% include partials/alert %>
+        <script type="text/javascript" src="js/addOrder.js"></script>
+    </body>
+</html>
