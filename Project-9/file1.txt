@@ -1,0 +1,7 @@
+Install the below listed packages to test
+ “npm install mocha chai chai-http”
+ Api is created using express and @babel for es6
+ Now we need to add test command just like start
+ “test”:”mocha –timeout 1000”
+As mocha act like a test runner and it will timout after 1000sec without
+response
